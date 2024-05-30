@@ -19,13 +19,15 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center'}}>
+    <div style={{ width: '100vw' }}>
       <h2>Hình Ảnh</h2>
       <div>
         <button onClick={prevImage}>Prev</button>
         <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} style={{ width: '300px', height: '200px' }} />
         <button onClick={nextImage}>Next</button>
       </div>
+    </div>
     </div>
   );
 };
